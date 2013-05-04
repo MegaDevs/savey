@@ -31,6 +31,7 @@
 		D76FCC5D17357B8E00FD3F14 /* tea_up.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC4917357B8E00FD3F14 /* tea_up.png */; };
 		D76FCC5F173581B000FD3F14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76FCC5E173581AF00FD3F14 /* QuartzCore.framework */; };
 		D76FCC631735827C00FD3F14 /* UIView+Fancy.m in Sources */ = {isa = PBXBuildFile; fileRef = D76FCC621735827C00FD3F14 /* UIView+Fancy.m */; };
+		D76FCC651735852C00FD3F14 /* coin_200.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC641735852B00FD3F14 /* coin_200.png */; };
 		D7D42EE917351D6D0049178D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EE817351D6D0049178D /* UIKit.framework */; };
 		D7D42EEB17351D6D0049178D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEA17351D6D0049178D /* Foundation.framework */; };
 		D7D42EED17351D6D0049178D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEC17351D6D0049178D /* CoreGraphics.framework */; };
@@ -73,6 +74,7 @@
 		D76FCC5E173581AF00FD3F14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D76FCC611735827C00FD3F14 /* UIView+Fancy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fancy.h"; sourceTree = "<group>"; };
 		D76FCC621735827C00FD3F14 /* UIView+Fancy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fancy.m"; sourceTree = "<group>"; };
+		D76FCC641735852B00FD3F14 /* coin_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_200.png; path = ../../savey_assets/ipad/coin_200.png; sourceTree = "<group>"; };
 		D7D42EE517351D6D0049178D /* VendingMachineDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachineDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D42EE817351D6D0049178D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7D42EEA17351D6D0049178D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 				D76FCC3817357B8E00FD3F14 /* cappuccino_up.png */,
 				D76FCC3917357B8E00FD3F14 /* choccolate_down.png */,
 				D76FCC3A17357B8E00FD3F14 /* choccolate_up.png */,
+				D76FCC641735852B00FD3F14 /* coin_200.png */,
 				D76FCC3B17357B8E00FD3F14 /* coin_10.png */,
 				D76FCC3C17357B8E00FD3F14 /* coin_20.png */,
 				D76FCC3D17357B8E00FD3F14 /* coin_50.png */,
@@ -294,6 +297,7 @@
 				D76FCC5B17357B8E00FD3F14 /* savey_logo.png in Resources */,
 				D76FCC5C17357B8E00FD3F14 /* tea_down.png in Resources */,
 				D76FCC5D17357B8E00FD3F14 /* tea_up.png in Resources */,
+				D76FCC651735852C00FD3F14 /* coin_200.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
