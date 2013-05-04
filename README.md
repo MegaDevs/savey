@@ -1,4 +1,4 @@
 savey
 =====
 
-Take a break, you earned it!
+Take a break, you've earned it!
