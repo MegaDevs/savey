@@ -1,8 +1,9 @@
-package com.megadevs.savey.machineserver;
+package com.megadevs.savey.machinecommon.network;
 
 import com.google.gson.Gson;
-import com.megadevs.savey.machineserver.data.APIRequest;
-import com.megadevs.savey.machineserver.data.APIResponse;
+import com.megadevs.savey.machinecommon.Logg;
+import com.megadevs.savey.machinecommon.data.APIRequest;
+import com.megadevs.savey.machinecommon.data.APIResponse;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
@@ -40,19 +41,15 @@ public class RealWebService implements WebService {
     private RealWebService() {}
 
     private HttpGet createRequest(Page page, APIRequest apiRequest) {
-        HttpGet request = null;
         String paramString = "";
         if (apiRequest != null) {
             List<NameValuePair> params = new ArrayList<NameValuePair>();
             params.add(new BasicNameValuePair("value", gson.toJson(apiRequest)));
             paramString = "?" + URLEncodedUtils.format(params, "utf-8");
         }
-        switch (page) {
-            case GET_CREDIT:
-                request = new HttpGet(endpoint.getValue() + page.getValue() + paramString);
-                break;
-        }
-        return request;
+        String url = endpoint.getValue() + page.getValue() + paramString;
+        Logg.d("RealWebService - Request to: %s", url);
+        return new HttpGet(url);
     }
 
     synchronized private APIResponse execute(HttpGet request) {
@@ -77,13 +74,17 @@ public class RealWebService implements WebService {
         Logg.e("Error while executing request - StatusCode: %d, ReasonPhrase: %s", response.getStatusLine().getStatusCode(), response.getStatusLine().getReasonPhrase());
     }
 
+    private void performOnBackground(Runnable runnable) {
+        new Thread(runnable).start();
+    }
+
     @Override
-    public void getMachineQrCode(final int id, final OnWebServiceResponse listener) {
+    public void getMachineQrCode(final int machineId, final OnWebServiceResponse listener) {
         performOnBackground(new Runnable() {
             @Override
             public void run() {
                 APIRequest apiRequest = new APIRequest();
-                apiRequest.id = id;
+                apiRequest.machine_id = machineId;
                 HttpGet request = createRequest(Page.GET_MACHINE, apiRequest);
                 APIResponse response = execute(request);
                 if (listener != null) {
@@ -99,7 +100,7 @@ public class RealWebService implements WebService {
             @Override
             public void run() {
                 APIRequest apiRequest = new APIRequest();
-                apiRequest.id = taskId;
+                apiRequest.task_id = taskId;
                 HttpGet request = createRequest(Page.GET_CREDIT, apiRequest);
                 APIResponse response = execute(request);
                 if (listener != null) {
@@ -109,8 +110,21 @@ public class RealWebService implements WebService {
         });
     }
 
-    private void performOnBackground(Runnable runnable) {
-        new Thread(runnable).start();
+    @Override
+    public void getTask(final int machineId, final int userId, final OnWebServiceResponse listener) {
+        performOnBackground(new Runnable() {
+            @Override
+            public void run() {
+                APIRequest apiRequest = new APIRequest();
+                apiRequest.machine_id = machineId;
+                apiRequest.user_id = userId;
+                HttpGet request = createRequest(Page.GET_TASK, apiRequest);
+                APIResponse response = execute(request);
+                if (listener != null) {
+                    listener.onWebServiceResponse(response);
+                }
+            }
+        });
     }
 
     public enum Endpoint {
@@ -128,7 +142,8 @@ public class RealWebService implements WebService {
 
     public enum Page {
         GET_MACHINE("get_machine"),
-        GET_CREDIT("get_credit");
+        GET_CREDIT("get_credit"),
+        GET_TASK("get_task");
 
         String value;
         Page(String value) {

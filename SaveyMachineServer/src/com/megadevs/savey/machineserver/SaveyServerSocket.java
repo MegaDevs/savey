@@ -1,5 +1,7 @@
 package com.megadevs.savey.machineserver;
 
+import com.megadevs.savey.machinecommon.Logg;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
