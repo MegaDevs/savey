@@ -18,6 +18,7 @@
 		D7D42EFF17351D6D0049178D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7D42EFE17351D6D0049178D /* Default-568h@2x.png */; };
 		D7D42F0217351D6D0049178D /* MDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D42F0117351D6D0049178D /* MDViewController.m */; };
 		D7D42F0517351D6D0049178D /* MDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7D42F0317351D6D0049178D /* MDViewController.xib */; };
+		D7D42F0D17351E860049178D /* MDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D42F0C17351E860049178D /* MDNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		D7D42F0017351D6D0049178D /* MDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDViewController.h; sourceTree = "<group>"; };
 		D7D42F0117351D6D0049178D /* MDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDViewController.m; sourceTree = "<group>"; };
 		D7D42F0417351D6D0049178D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDViewController.xib; sourceTree = "<group>"; };
+		D7D42F0B17351E860049178D /* MDNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNetworkManager.h; sourceTree = "<group>"; };
+		D7D42F0C17351E860049178D /* MDNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNetworkManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				D7D42F0117351D6D0049178D /* MDViewController.m */,
 				D7D42F0317351D6D0049178D /* MDViewController.xib */,
 				D7D42EEF17351D6D0049178D /* Supporting Files */,
+				D7D42F0B17351E860049178D /* MDNetworkManager.h */,
+				D7D42F0C17351E860049178D /* MDNetworkManager.m */,
 			);
 			path = VendingMachineDisplay;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				D7D42EF517351D6D0049178D /* main.m in Sources */,
 				D7D42EF917351D6D0049178D /* MDAppDelegate.m in Sources */,
 				D7D42F0217351D6D0049178D /* MDViewController.m in Sources */,
+				D7D42F0D17351E860049178D /* MDNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
