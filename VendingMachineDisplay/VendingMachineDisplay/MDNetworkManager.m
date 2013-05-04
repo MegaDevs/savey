@@ -7,8 +7,6 @@
 //
 
 #import "MDNetworkManager.h"
-#include <sys/types.h> 
-#include <sys/socket.h>
 
 #define MDPort 9876
 #define MDIP   @"192.168.2.17"
@@ -122,7 +120,7 @@
                 
                 
                 NSLog(@"Output %@", stringRead);
-                if ([stringRead characterAtIndex:[stringRead length] - 1] == '}') {
+                if (stringRead.length > 0 && [stringRead characterAtIndex:[stringRead length] - 1] == '}') {
                     NSDictionary *json = [stringRead objectFromJSONString];
                     __mblock(json);
                     stringRead = nil;

@@ -9,19 +9,29 @@
 #import "MDViewController.h"
 #import "MDNetworkManager.h"
 #import "NSData+Base64.h"
+#import <QuartzCore/QuartzCore.h>
+#import "UIView+Fancy.h"
 
 #define MD50CentButton 50
+#define MD10CentButton 10
+#define MD20CentButton 20
 #define MD1EuroButton 1
-#define MD2EuroButton 2
 
 #define MDCaffeButton 1
-#define MDCappuccinoButton 2
+#define MDTeaButton 2
+#define MDLatteButton 3
+#define MDOrzoButton 4
+#define MDCappuccinoButton 5
+#define MDCioccolatoButton 6
 
 @interface MDViewController ()
 
 @end
 
 @implementation MDViewController
+{
+    UIActivityIndicatorView *__activityIndicator;
+}
 
 - (void)viewDidLoad
 {
@@ -45,6 +55,15 @@
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [__networkManager requestQRCode];
     });
+    
+    self.qrCode.layer.borderColor = [UIColor brownColor].CGColor;
+    self.qrCode.layer.borderWidth = 2.0;
+    
+    __activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:self.qrCode.frame];
+    __activityIndicator.backgroundColor = [UIColor clearColor];
+    __activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+    [self.view addSubview:__activityIndicator];
+    [__activityIndicator startAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,8 +78,10 @@
     
     //create actual image
     UIImage *image = [UIImage imageWithData:data];
-    
+    self.qrCode.hidden = YES;
     self.qrCode.image = image;
+    [__activityIndicator stopAnimating];
+    [self.qrCode fadeIn];
 }
 
 - (void)didSelectProduct:(id)json
@@ -75,32 +96,12 @@
 
 - (IBAction)addCredit:(id)sender
 {
-    switch ([sender tag]) {
-        case MD50CentButton:
-            [__networkManager addCredit:0.5];
-            break;
-        case MD1EuroButton:
-            [__networkManager addCredit:1.0];
-            break;
-        case MD2EuroButton:
-            [__networkManager addCredit:2.0];
-            break;
-        default:
-            break;
-    }
+    [__networkManager addCredit:(CGFloat)[sender tag] / 100.0];
 }
 
 - (IBAction)selectProduct:(id)sender
 {
-    switch ([sender tag]) {
-        case MDCaffeButton:
-            [__networkManager selectProduct:42];
-            break;
-        case MDCappuccinoButton:
-            [__networkManager selectProduct:43];
-        default:
-            break;
-    }
+    [__networkManager selectProduct:[sender tag]];
 }
 
 @end

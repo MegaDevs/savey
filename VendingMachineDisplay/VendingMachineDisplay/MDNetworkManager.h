@@ -31,7 +31,5 @@ typedef void (^MessageSentBlock) (NSDictionary *json);
 - (void)selectProduct:(NSInteger)identifier;
 - (void)requestQRCode;
 
-- (void)sendMessage:(NSDictionary *)json;
-
 
 @end
