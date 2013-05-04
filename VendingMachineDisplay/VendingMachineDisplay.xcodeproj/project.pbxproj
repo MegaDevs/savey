@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11F097821B354D69AE3DFFC4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EED16D9E2964712B021FEC1 /* libPods.a */; };
+		D76FCC3317355FF100FD3F14 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D76FCC3217355FF100FD3F14 /* NSData+Base64.m */; };
 		D7D42EE917351D6D0049178D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EE817351D6D0049178D /* UIKit.framework */; };
 		D7D42EEB17351D6D0049178D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEA17351D6D0049178D /* Foundation.framework */; };
 		D7D42EED17351D6D0049178D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEC17351D6D0049178D /* CoreGraphics.framework */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D6661ABC2504EE9AA07C4B8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6EED16D9E2964712B021FEC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76FCC3117355FF100FD3F14 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		D76FCC3217355FF100FD3F14 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		D7D42EE517351D6D0049178D /* VendingMachineDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachineDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D42EE817351D6D0049178D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7D42EEA17351D6D0049178D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +56,7 @@
 				D7D42EE917351D6D0049178D /* UIKit.framework in Frameworks */,
 				D7D42EEB17351D6D0049178D /* Foundation.framework in Frameworks */,
 				D7D42EED17351D6D0049178D /* CoreGraphics.framework in Frameworks */,
+				11F097821B354D69AE3DFFC4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,7 @@
 				D7D42EEE17351D6D0049178D /* VendingMachineDisplay */,
 				D7D42EE717351D6D0049178D /* Frameworks */,
 				D7D42EE617351D6D0049178D /* Products */,
+				3D6661ABC2504EE9AA07C4B8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +87,7 @@
 				D7D42EE817351D6D0049178D /* UIKit.framework */,
 				D7D42EEA17351D6D0049178D /* Foundation.framework */,
 				D7D42EEC17351D6D0049178D /* CoreGraphics.framework */,
+				6EED16D9E2964712B021FEC1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,6 +103,8 @@
 				D7D42EEF17351D6D0049178D /* Supporting Files */,
 				D7D42F0B17351E860049178D /* MDNetworkManager.h */,
 				D7D42F0C17351E860049178D /* MDNetworkManager.m */,
+				D76FCC3117355FF100FD3F14 /* NSData+Base64.h */,
+				D76FCC3217355FF100FD3F14 /* NSData+Base64.m */,
 			);
 			path = VendingMachineDisplay;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 				D7D42EE117351D6D0049178D /* Sources */,
 				D7D42EE217351D6D0049178D /* Frameworks */,
 				D7D42EE317351D6D0049178D /* Resources */,
+				3A570C5E2F6F4117B94FCE6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,6 +186,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A570C5E2F6F4117B94FCE6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7D42EE117351D6D0049178D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -183,6 +212,7 @@
 				D7D42EF917351D6D0049178D /* MDAppDelegate.m in Sources */,
 				D7D42F0217351D6D0049178D /* MDViewController.m in Sources */,
 				D7D42F0D17351E860049178D /* MDNetworkManager.m in Sources */,
+				D76FCC3317355FF100FD3F14 /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +250,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicola Miotto (458RFQE64U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicola Miotto (458RFQE64U)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -235,6 +266,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -252,7 +285,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicola Miotto (458RFQE64U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicola Miotto (458RFQE64U)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -260,6 +294,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -268,22 +304,32 @@
 		};
 		D7D42F0917351D6D0049178D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6661ABC2504EE9AA07C4B8 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicola Miotto (458RFQE64U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicola Miotto (458RFQE64U)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VendingMachineDisplay/VendingMachineDisplay-Prefix.pch";
 				INFOPLIST_FILE = "VendingMachineDisplay/VendingMachineDisplay-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		D7D42F0A17351D6D0049178D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6661ABC2504EE9AA07C4B8 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicola Miotto (458RFQE64U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicola Miotto (458RFQE64U)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VendingMachineDisplay/VendingMachineDisplay-Prefix.pch";
 				INFOPLIST_FILE = "VendingMachineDisplay/VendingMachineDisplay-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B24C6302-5043-4A4C-89FB-70B88E718E6F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -307,6 +353,7 @@
 				D7D42F0A17351D6D0049178D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
