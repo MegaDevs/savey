@@ -1,0 +1,3 @@
+[submodule "savey_dashboard"]
+	path = savey_dashboard
+	url = git@github.com:MegaDevs/savey_dashboard.git
