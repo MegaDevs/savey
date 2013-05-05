@@ -139,6 +139,7 @@ void setup() {
 
 }
 
+int progDelay=0;
 void loop() {
 
   byte err;
@@ -203,7 +204,15 @@ void loop() {
   displayNumber(display2, n3 , false);
 
   //progress
-  
+  /*
+  if(prog==6 && progDelay>2){
+     prog=-1;
+     progDelay=0;
+  }else if(prog==7){
+    progDelay++;
+  }
+   */
+    
   for(int i=0;i<7;i++){
     if(i <= prog)
       digitalWrite(progress[i] , HIGH);
@@ -211,6 +220,10 @@ void loop() {
       digitalWrite(progress[i] , LOW);
   }
   
+  if(prog>=6)
+    prog++;
+  
+  if(prog==9)prog=-1;
 
   n++;
   if(n==10)n=0;

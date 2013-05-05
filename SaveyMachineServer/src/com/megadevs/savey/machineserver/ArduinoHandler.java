@@ -11,6 +11,7 @@ import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
+import com.megadevs.savey.machinecommon.Logg;
 
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
@@ -22,6 +23,15 @@ public class ArduinoHandler implements Runnable {
 	private static final String TAG = "TestArduino";
 	private static final String ACTION_USB_PERMISSION = "test.arduino.action.USB_PERMISSION";
 
+    private static ArduinoHandler instance;
+
+    public static ArduinoHandler getInstance() {
+        if (instance == null) {
+            instance = new ArduinoHandler();
+        }
+        return instance;
+    }
+
 	private UsbManager mUsbManager;
 	private PendingIntent mPermissionIntent;
 	private boolean mPermissionRequestPending;
@@ -30,15 +40,14 @@ public class ArduinoHandler implements Runnable {
 	private ParcelFileDescriptor mFileDescriptor;
 	private FileInputStream mInputStream;
 	private FileOutputStream mOutputStream;
-	private Activity act; 
 
 	int dummy = 25;
 
 	private BroadcastReceiver mUsbReceiver;
 
+    private double currentCredit = 0.0;
 
-	public ArduinoHandler(final Activity activity){
-		act=activity;
+	private ArduinoHandler(){
 		mUsbReceiver = new BroadcastReceiver() {
 			@Override
 			public void onReceive(Context context, Intent intent) {
@@ -98,9 +107,49 @@ public class ArduinoHandler implements Runnable {
 		}
 	}
 
+    public double getCurrentCredit() {
+        return currentCredit;
+    }
 
+    public void addCredit(double credit) {
+        currentCredit += credit;
+        if (currentCredit > 9.99) {
+            currentCredit = 9.99;
+        }
+        updateCurrentCredit();
+    }
+
+    public void removeCredit(double credit) {
+        currentCredit -= credit;
+        if (currentCredit < 0.00) {
+            currentCredit = 0.00;
+        }
+        updateCurrentCredit();
+    }
+
+    private void updateCurrentCredit() {
+        int[] digits = double2ints(currentCredit);
+        Logg.d("Current credit: %f", currentCredit);
+        updatePrice(digits[0], digits[1], digits[2]);
+    }
+
+    public int[] double2ints(double value) {
+        String creditString = "" + currentCredit;
+        Logg.d("CreditString: %s", creditString);
+        int[] out = new int[3];
+        out[0] = Integer.valueOf("" + creditString.charAt(0));
+        out[1] = Integer.valueOf("" + creditString.charAt(2));
+        out[2] = (creditString.length() >= 4) ? Integer.valueOf("" + creditString.charAt(3)) : 0;
+        return out;
+    }
+
+    public void resetCredit() {
+        currentCredit = 0.0;
+        updatePrice(0, 0, 0);
+    }
 
 	public void updatePrice(final int a, final int b, final int c){
+        Logg.d("Updating price with: %d, %d, %d", a, b, c);
 		Thread t = new Thread(){
 			public void run(){
 				sendCommand(a, b, c, dummy);
@@ -125,7 +174,6 @@ public class ArduinoHandler implements Runnable {
 					}
 
 				}
-
 			}
 		};
 		t.start();
@@ -135,23 +183,23 @@ public class ArduinoHandler implements Runnable {
 	public void run() {
 
 		//TODO test display async
-		Thread t=new Thread(){
-			public void run(){
-				try {
-					Thread.sleep(5000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				sendCommand(1,2,3,dummy);				
-			}
-		};
-		t.start();
+//		Thread t=new Thread(){
+//			public void run(){
+//				try {
+//					Thread.sleep(5000);
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				}
+//				sendCommand(1,2,3,dummy);
+//			}
+//		};
+//		t.start();
 
 		//TODO test progress
-		startCoffe(10);
+//		startCoffe(10);
 
 		//TODO test display
-		sendCommand(9,9,9,dummy);	
+//		sendCommand(9,9,9,dummy);
 
 
 		//Keep up...
@@ -189,30 +237,29 @@ public class ArduinoHandler implements Runnable {
 		closeAccessory();
 	}
 
-	public void onDestroy(){
-		act.unregisterReceiver(mUsbReceiver);
-		act=null;
+	public void onDestroy(Context context) {
+		context.unregisterReceiver(mUsbReceiver);
 	}
 
-	public Object onRetainNonConfigurationInstance(){
+	public Object onRetainNonConfigurationInstance(Activity activity) {
 		if (mAccessory != null) {
 			return mAccessory;
 		} else {
-			return act.onRetainNonConfigurationInstance();
+			return activity.onRetainNonConfigurationInstance();
 		}
 	}
 
-	public void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Activity activity, Bundle savedInstanceState) {
 		//mUsbManager = UsbManager.getInstance(this);
-		mUsbManager = (UsbManager) act.getSystemService(Context.USB_SERVICE);
+		mUsbManager = (UsbManager) activity.getSystemService(Context.USB_SERVICE);
 
-		mPermissionIntent = PendingIntent.getBroadcast(act, 0, new Intent(ACTION_USB_PERMISSION), 0);
+		mPermissionIntent = PendingIntent.getBroadcast(activity, 0, new Intent(ACTION_USB_PERMISSION), 0);
 		IntentFilter filter = new IntentFilter(ACTION_USB_PERMISSION);
 		filter.addAction(UsbManager.ACTION_USB_ACCESSORY_DETACHED);
-		act.registerReceiver(mUsbReceiver, filter);
+		activity.registerReceiver(mUsbReceiver, filter);
 
-		if (act.getLastNonConfigurationInstance() != null) {
-			mAccessory = (UsbAccessory) act.getLastNonConfigurationInstance();
+		if (activity.getLastNonConfigurationInstance() != null) {
+			mAccessory = (UsbAccessory) activity.getLastNonConfigurationInstance();
 			openAccessory(mAccessory);
 		}
 
