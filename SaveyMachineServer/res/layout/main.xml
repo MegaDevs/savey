@@ -12,6 +12,18 @@
             android:layout_height="wrap_content"
             android:text="Restart service" />
 
+    <Button android:id="@+id/btn_automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_restart_service"
+            android:text="Automatic" />
+
+    <Button android:id="@+id/btn_reset_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_automatic"
+            android:text="Reset credit" />
+
     <TextView android:id="@+id/log"
               android:layout_width="match_parent"
               android:layout_height="match_parent"

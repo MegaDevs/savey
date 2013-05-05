@@ -24,6 +24,8 @@ public class MainActivity extends Activity {
 
     private SurfaceView surface;
     private Button btnRestartService;
+    private Button btnAutomatic;
+    private Button btnResetCredit;
     private TextView txtLog;
 
     private CameraManager cameraManager;
@@ -79,6 +81,26 @@ public class MainActivity extends Activity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+            }
+        });
+        btnAutomatic = (Button) findViewById(R.id.btn_automatic);
+        btnAutomatic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Product product = Product.TEA;
+                if (product.getCost() > ArduinoHandler.getInstance().getCurrentCredit()) {
+                    ArduinoHandler.getInstance().addCredit(product.getCost() - ArduinoHandler.getInstance().getCurrentCredit());
+                }
+                ArduinoHandler.getInstance().removeCredit(product.getCost());
+                ArduinoHandler.getInstance().startCoffe(HandleClient.COFFE_DURATION);
+                MusicPlayer.getInstance().play();
+            }
+        });
+        btnResetCredit = (Button) findViewById(R.id.btn_reset_credit);
+        btnResetCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ArduinoHandler.getInstance().resetCredit();
             }
         });
 

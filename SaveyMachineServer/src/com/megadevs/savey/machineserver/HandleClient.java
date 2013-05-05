@@ -11,7 +11,7 @@ import java.net.Socket;
 
 public class HandleClient extends Thread {
 
-    private static final int COFFE_DURATION = 10; //Duration in seconds
+    public static final int COFFE_DURATION = 10; //Duration in seconds
 
     private Socket mClient;
     private BufferedReader reader;
