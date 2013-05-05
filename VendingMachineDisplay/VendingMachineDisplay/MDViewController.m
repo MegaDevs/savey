@@ -124,12 +124,12 @@
                                                    delay:0.0
                                                  options:0
                                               animations:^{
-                                                  self.coinTaker.transform = view.transform = CGAffineTransformMakeTranslation(300, 0);
+                                                  self.coinTaker.transform = view.transform = CGAffineTransformMakeTranslation(200, 0);
                                               }
                                               completion:^(BOOL finished){
-                                                  [UIView animateWithDuration:0.6
+                                                  [UIView animateWithDuration:0.4
                                                                         delay:0.0
-                                                                      options:0
+                                                                      options:UIViewAnimationOptionCurveEaseOut
                                                                    animations:^{
                                                                        self.coinTaker.transform = CGAffineTransformIdentity;
                                                                    }
