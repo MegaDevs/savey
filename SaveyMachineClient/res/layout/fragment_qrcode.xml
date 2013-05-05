@@ -7,6 +7,6 @@
     <ImageView android:id="@+id/image_qrcode"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
-               android:scaleType="centerInside" />
+               android:scaleType="fitCenter" />
 
 </LinearLayout>
