@@ -40,20 +40,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     __networkManager = [[MDNetworkManager alloc] initWithMessageSentBlock:^(NSDictionary *json){
-        NSLog(@"JSON %@", json);
-        if ([json[MDTypeKey] isEqualToString:MD_GET_QWRCODE]) {
-            [self didSendQrCode:json];
-        }
-        else if ([json[MDTypeKey] isEqualToString:MD_SELECT_PRODUCT]){
-            [self didSelectProduct:json];
-        }
-    }];
-    
-    double delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            NSLog(@"JSON %@", json);
+            if ([json[MDTypeKey] isEqualToString:MD_GET_QWRCODE]) {
+                [self didSendQrCode:json];
+            }
+            else if ([json[MDTypeKey] isEqualToString:MD_SELECT_PRODUCT]){
+                [self didSelectProduct:json];
+            }
+        }];
         [__networkManager requestQRCode];
-    });
     
     self.qrCode.layer.borderColor = [UIColor brownColor].CGColor;
     self.qrCode.layer.borderWidth = 2.0;
@@ -186,6 +181,9 @@
 
 - (IBAction)showAdmin:(id)sender
 {
+    NSDictionary *json = @{@"qrcode" : @"iVBORw0KGgoAAAANSUhEUgAAAOYAAADmCAIAAABOCG7sAAAABmJLR0QA/wD/AP+gvaeTAAAELElEQVR4nO3dwW7jNhRA0bjo//9yusimgDCARiOS77bn7GM5xgUB0jT5+f7+/oKOv06/Afg9kiVGssRIlhjJEiNZYiRLjGSJkSwxkiVGssRIlhjJEiNZYiRLjGSJkSwxkiVGssRIlhjJEiNZYiRLjGSJkSwxkiVGssRIlhjJEiNZYiRLjGSJkSwxkiVGssRIlhjJEiNZYiRLzN+nHvz5fE49+uvr63rb2Vvv59k9aneevu49P3PqxjijLDGSJUayxEiWGMkSc2zF4GrdDHTnasDZlYf5n+GfM8oSI1liJEuMZImRLDGDVgyuns1Sz86a33r69Vnrdi9cndo/cIdRlhjJEiNZYiRLjGSJGb1isNPZOfJb6wP/B0ZZYiRLjGSJkSwxkiXGisEvrduHf10NuHNGgTWEH0ZZYiRLjGSJkSwxkiVm9IrBzjnyzvWBnf576wxGWWIkS4xkiZEsMZIlZtCKwZyz9X48+97/zn+xbv/AtM9wBaMsMZIlRrLESJYYyRJzbMWg+N33zrMH7yh+hn/OKEuMZImRLDGSJUayxAzaY3D11jn/0+4duL7Os50Jz56+85VXMMoSI1liJEuMZImRLDGfU/O+1iz1x7rbFafd2zj53EWjLDGSJUayxEiWGMkSc2zF4I635tFv/S7g2bOenXWw7lnP3s+VPQZwi2SJkSwxkiVGssTE9hhc7fxO/9k37zv3D9x5+uQ1ojuMssRIlhjJEiNZYiRLzOhzDK52nj+w7tv5t7z1f11N/p2CUZYYyRIjWWIkS4xkiRm9YrBu//y6+e+zXQc7fxfw7H+fszPBKEuMZImRLDGSJUayxAz6VcLOnfl3rDsToHiGoT0G8JBkiZEsMZIlRrLEjN5j8NYs9a25/871gWnnPNhjAA9JlhjJEiNZYiRLzOgVg2nnBlxNm4/Xzyi4wyhLjGSJkSwxkiVGssSMvl1xp533IMw/tWDyGoJRlhjJEiNZYiRLjGSJGXSOwU47Z83rfl9w9jYH5xjALZIlRrLESJYYyRIz6FcJ808+vPPKO+fRb53qcDXt1x//ZpQlRrLESJYYyRIjWWIGrRhcTdu9v+7OhTvemsXv/FRXMMoSI1liJEuMZImRLDGjVwzO2jmv37nKMe20xt9llCVGssRIlhjJEiNZYqwY/NJbs+91f3XndebsDXiLUZYYyRIjWWIkS4xkiRm9YnD2TICzJxbe8eymhjqjLDGSJUayxEiWGMkSM2jFYNppe2dPPnxr/8DZ+xRWMMoSI1liJEuMZImRLDHHbleEZ4yyxEiWGMkSI1liJEuMZImRLDGSJUayxEiWGMkSI1liJEuMZImRLDGSJUayxEiWGMkSI1liJEuMZImRLDGSJUayxEiWGMkSI1liJEuMZImRLDGSJUayxEiWGMkSI1liJEuMZImRLDH/AFOfeMRlEe8sAAAAAElFTkSuQmCC"};
+    [self didSendQrCode:json];
+    
     self.ipField.hidden = !self.ipField.hidden;
     self.resetConnectionButton.hidden = !self.resetConnectionButton.hidden;
 }

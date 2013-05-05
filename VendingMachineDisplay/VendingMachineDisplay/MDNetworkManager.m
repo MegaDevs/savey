@@ -43,7 +43,6 @@
     
     [__inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [__outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-    
     [__inputStream open];
     [__outputStream open];
 }
