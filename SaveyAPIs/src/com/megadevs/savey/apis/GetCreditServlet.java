@@ -34,6 +34,8 @@ public class GetCreditServlet extends HttpServlet {
 				String name = jsonReader.nextName();
 				if (name.equals(IDS.USER_TASK_ID.getID()))
 					userID = jsonReader.nextString();
+				else
+					jsonReader.nextString();
 			}
 
 			jsonReader.endObject();

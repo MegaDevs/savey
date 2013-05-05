@@ -51,7 +51,7 @@ public class SaveyUtils {
 	public static String generateQRCode(String input) throws WriterException, IOException {
 		
 		QRCodeWriter writer = new QRCodeWriter();
-		BitMatrix matrix = writer.encode(input, BarcodeFormat.QR_CODE, 25, 25);
+		BitMatrix matrix = writer.encode(input, BarcodeFormat.QR_CODE, 500, 500);
 
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		MatrixToImageWriter.writeToStream(matrix, "PNG", out);
