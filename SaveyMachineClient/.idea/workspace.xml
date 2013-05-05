@@ -38,22 +38,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="SaveyMachineClient" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" name="Default" comment="Progress on Android stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/LoadingFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_qrcode.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_qrcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SaveyMachineServer/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" name="Default" comment="Progress on Android stuff" />
     <ignored path="SaveyMachineClient.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693101237" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367701577659" ignored="false" />
-    <file path="$PROJECT_DIR$/../SaveyMachineServer/AndroidManifest.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367695298440" ignored="false" />
     <file path="/MainActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367719599662" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/MainActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367694874523" ignored="false" />
     <file path="/a.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693517157" ignored="false" />

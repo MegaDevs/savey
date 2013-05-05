@@ -38,17 +38,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="SaveyServerMachine" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a902017e-86db-4a63-b677-17147d6bf151" name="Default" comment="Progress on Android stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/LoadingFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainActivity.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/QrCodeFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/QrCodeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/TaskFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/TaskFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_qrcode.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_qrcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a902017e-86db-4a63-b677-17147d6bf151" name="Default" comment="Progress on Android stuff" />
     <ignored path="SaveyMachineServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367664013109" ignored="false" />
