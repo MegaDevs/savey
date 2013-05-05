@@ -117,7 +117,7 @@
                               delay:0.0
                             options:0
                          animations:^{
-                             view.center = CGPointMake(938,134);
+                             view.center = CGPointMake(937,168);
                          }
                          completion:^(BOOL finished){
                              [UIView animateWithDuration:0.6
