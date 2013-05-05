@@ -1,6 +1,8 @@
-package com.megadevs.savey.machineserver.data;
+package com.megadevs.savey.machinecommon.data;
 
-public class APIResponse {
+import java.io.Serializable;
+
+public class APIResponse implements Serializable {
 
     public String qrcode;
     public boolean valid;

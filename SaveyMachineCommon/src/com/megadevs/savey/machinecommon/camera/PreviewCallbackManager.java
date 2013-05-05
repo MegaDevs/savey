@@ -1,4 +1,4 @@
-package com.megadevs.savey.camera;
+package com.megadevs.savey.machinecommon.camera;
 
 import android.hardware.Camera;
 import com.google.gson.Gson;
@@ -8,8 +8,8 @@ import com.google.zxing.PlanarYUVLuminanceSource;
 import com.google.zxing.Result;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
-import com.megadevs.savey.machineserver.Logg;
-import com.megadevs.savey.machineserver.data.QrCodeData;
+import com.megadevs.savey.machinecommon.Logg;
+import com.megadevs.savey.machinecommon.data.QrCodeData;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;

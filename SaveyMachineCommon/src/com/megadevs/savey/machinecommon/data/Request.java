@@ -1,4 +1,4 @@
-package com.megadevs.savey.machineserver.data;
+package com.megadevs.savey.machinecommon.data;
 
 import java.io.Serializable;
 

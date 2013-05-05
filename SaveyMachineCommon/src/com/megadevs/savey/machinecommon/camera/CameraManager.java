@@ -1,10 +1,10 @@
-package com.megadevs.savey.camera;
+package com.megadevs.savey.machinecommon.camera;
 
 import android.app.Activity;
 import android.hardware.Camera;
 import android.view.Surface;
 import android.view.SurfaceHolder;
-import com.megadevs.savey.machineserver.Logg;
+import com.megadevs.savey.machinecommon.Logg;
 
 import java.io.IOException;
 
@@ -62,6 +62,12 @@ public class CameraManager {
 
     public void onPause() {
         stopPreview();
+    }
+
+    public void release() {
+        if (camera != null) {
+            camera.release();
+        }
     }
 
     private void startPreview() {

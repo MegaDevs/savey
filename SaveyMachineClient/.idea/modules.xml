@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SaveyMachineClient.iml" filepath="$PROJECT_DIR$/SaveyMachineClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SaveyMachineCommon/SaveyMachineCommon.iml" filepath="$PROJECT_DIR$/../SaveyMachineCommon/SaveyMachineCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SaveyMachineTagWriter/SaveyMachineTagWriter.iml" filepath="$PROJECT_DIR$/../SaveyMachineTagWriter/SaveyMachineTagWriter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TagUtilsLib/TagUtilsLib.iml" filepath="$PROJECT_DIR$/../TagUtilsLib/TagUtilsLib.iml" />
+    </modules>
+  </component>
+</project>
+
