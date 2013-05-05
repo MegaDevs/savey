@@ -12,22 +12,54 @@ public class SaveyServerSocket extends Thread {
 
     private static final int PORT = 9876;
 
+    private static SaveyServerSocket instance;
+
+    public static SaveyServerSocket getInstance() {
+        return new SaveyServerSocket();
+    }
+
     private List<HandleClient> connectedClients = new CopyOnWriteArrayList<HandleClient>();
     private ServerSocket mSocket;
     private boolean running = true;
+    private boolean started = false;
+
+    private SaveyServerSocket() {}
+
+    @Override
+    public synchronized void start() {
+        if (!started) {
+            super.start();
+            started = true;
+        }
+    }
 
     @Override
     public void run() {
         try {
-            mSocket = new ServerSocket(PORT);
-        } catch (Exception e) {
-            throw new IllegalStateException("Cannot create socket");
+            if (mSocket != null) {
+                try {
+                    mSocket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            while (mSocket == null) {
+                try {
+                    mSocket = new ServerSocket(PORT);
+                } catch (Exception e) {
+                    Logg.e("Couldn't create server socket: %s", e.getMessage());
+                    e.printStackTrace();
+                    Thread.sleep(200);
+                }
+            }
+            listen();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        listen();
     }
 
     private void listen() {
-        while (running) {
+        while (running && !isInterrupted()) {
             try {
                 Logg.d("Listening...");
                 Socket client = mSocket.accept();
@@ -40,12 +72,14 @@ public class SaveyServerSocket extends Thread {
                 throw new RuntimeException(e);
             }
         }
-        try {
-            mSocket.close();
-        } catch (IOException e) {}
         for (HandleClient client : connectedClients) {
             client.close();
         }
+        try {
+            mSocket.close();
+        } catch (IOException e) {}
+        mSocket = null;
+        Logg.d("Server socket dead");
     }
 
     public void remove(HandleClient client) {
@@ -53,6 +87,7 @@ public class SaveyServerSocket extends Thread {
     }
 
     public void onDestroy() {
+        Logg.d("onDestroy server socket");
         running = false;
         interrupt();
     }

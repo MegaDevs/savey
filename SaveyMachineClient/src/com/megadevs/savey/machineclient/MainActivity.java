@@ -56,6 +56,7 @@ public class MainActivity extends Activity {
 
     public void getRemoteTask(QrCodeData data) {
         if (data != null) {
+            showLoadingFragment(false);
             RealWebService.getInstance().getTask(Integer.valueOf(data.savey), User.getInstance().getId(), new WebService.OnWebServiceResponse() {
                 @Override
                 public void onWebServiceResponse(APIResponse response) {
@@ -84,8 +85,21 @@ public class MainActivity extends Activity {
     }
 
     public void showTaskQrCode(APIResponse response) {
-        hideFragment(FragmentTag.TASK);
-        QrCodeFragment frag = QrCodeFragment.getInstance(response.qrcode);
+        popBackStack();
+        QrCodeFragment frag = QrCodeFragment.getInstance(response.qr_code);
+        showFragment(frag, FragmentTag.QRCODE);
+    }
+
+    public void showLoadingFragment(boolean popBackStack) {
+        if (popBackStack) {
+            popBackStack();
+        }
+        LoadingFragment frag = LoadingFragment.getInstance();
+        showFragment(frag, FragmentTag.LOADING, false);
+    }
+
+    private void popBackStack() {
+        getFragmentManager().popBackStackImmediate();
     }
 
     private void showFragment(Fragment fragment, FragmentTag tag) {
@@ -93,6 +107,9 @@ public class MainActivity extends Activity {
     }
 
     private void showFragment(Fragment fragment, FragmentTag tag, boolean addToBackStack) {
+        if (tag != FragmentTag.LOADING) {
+            hideFragment(FragmentTag.LOADING);
+        }
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment, tag.name());
         if (addToBackStack) {
@@ -104,9 +121,11 @@ public class MainActivity extends Activity {
     private void hideFragment(FragmentTag tag) {
         Fragment fragment = getFragmentByTag(tag.name());
         if (fragment != null) {
-            FragmentTransaction transaction = getFragmentManager().beginTransaction();
-            transaction.remove(fragment);
-            transaction.commitAllowingStateLoss();
+            //if (!getFragmentManager().popBackStackImmediate(tag.name(), FragmentManager.POP_BACK_STACK_INCLUSIVE)) {
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.remove(fragment);
+                transaction.commitAllowingStateLoss();
+            //}
         }
     }
 
@@ -114,11 +133,16 @@ public class MainActivity extends Activity {
         return getFragmentManager().findFragmentByTag(tag);
     }
 
+    private boolean isFragmentAdded(FragmentTag tag) {
+        return getFragmentByTag(tag.name()) != null;
+    }
+
     public enum FragmentTag {
         MAIN,
         TASK,
         CAMERA,
-        QRCODE
+        QRCODE,
+        LOADING
     }
 
 }
