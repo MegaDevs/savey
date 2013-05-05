@@ -16,6 +16,8 @@ public class MainActivity extends Activity {
 
     private WebService webService = RealWebService.getInstance();
 
+    private ArduinoHandler arduinoHandler;
+
     private SurfaceView surface;
 
     private CameraManager cameraManager;
@@ -45,6 +47,9 @@ public class MainActivity extends Activity {
 
         Logg.setTag("SaveyServerMachine");
 
+        arduinoHandler = new ArduinoHandler(this);
+        arduinoHandler.onCreate(savedInstanceState);
+
         startService(new Intent(this, SocketService.class));
 
         surface = (SurfaceView) findViewById(R.id.surface);
@@ -52,15 +57,27 @@ public class MainActivity extends Activity {
     }
 
     @Override
+    public Object onRetainNonConfigurationInstance() {
+        return arduinoHandler.onRetainNonConfigurationInstance();
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
+        arduinoHandler.onResume();
         cameraManager.onResume();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
+        arduinoHandler.onPause();
         cameraManager.onPause();
     }
 
+    @Override
+    protected void onDestroy() {
+        arduinoHandler.onDestroy();
+        super.onDestroy();
+    }
 }
