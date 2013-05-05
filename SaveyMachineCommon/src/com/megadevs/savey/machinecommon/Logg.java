@@ -1,4 +1,4 @@
-package com.megadevs.savey.machineserver;
+package com.megadevs.savey.machinecommon;
 
 import android.util.Log;
 

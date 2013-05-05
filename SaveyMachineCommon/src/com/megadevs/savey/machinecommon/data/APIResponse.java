@@ -1,7 +1,14 @@
-package com.megadevs.savey.machineserver.data;
+package com.megadevs.savey.machinecommon.data;
 
-public class APIResponse {
+import java.io.Serializable;
 
+public class APIResponse implements Serializable {
+
+    public int task_id;
+    public int machine_id;
+    public TaskType type;
+    public String title;
+    public String[] content;
     public String qrcode;
     public boolean valid;
     public double credit;

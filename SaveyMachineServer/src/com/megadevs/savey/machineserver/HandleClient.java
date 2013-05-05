@@ -1,8 +1,9 @@
 package com.megadevs.savey.machineserver;
 
-import com.google.gson.Gson;
-import com.megadevs.savey.machineserver.data.Request;
-import com.megadevs.savey.machineserver.data.Response;
+import com.megadevs.savey.machinecommon.GsonWrapper;
+import com.megadevs.savey.machinecommon.Logg;
+import com.megadevs.savey.machinecommon.data.Request;
+import com.megadevs.savey.machinecommon.data.Response;
 
 import java.io.*;
 import java.lang.ref.WeakReference;
@@ -13,8 +14,6 @@ public class HandleClient extends Thread {
     private Socket mClient;
     private BufferedReader reader;
     private BufferedWriter writer;
-    //private OutputStream writer;
-    private Gson gson = new Gson();
     private boolean running = true;
     private WeakReference<SaveyServerSocket> serverSocket;
 
@@ -63,7 +62,7 @@ public class HandleClient extends Thread {
             Logg.d("Reading request...");
             String json = reader.readLine();
             Logg.d("Json: " + json);
-            Request request = gson.fromJson(json, Request.class);
+            Request request = GsonWrapper.getRequest(json);
             Logg.d("Read request: " + request);
             return request;
         } catch (Exception e) {
@@ -93,7 +92,7 @@ public class HandleClient extends Thread {
     private void sendResponse(Response response) {
         try {
             Logg.d("Sending response: %s", response);
-            String json = gson.toJson(response);
+            String json = GsonWrapper.toJson(response);
             Logg.d("Json: %s", json);
 
             writer.write(json);

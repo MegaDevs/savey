@@ -16,6 +16,13 @@
 }
 
 @property (nonatomic, strong) IBOutlet UIImageView *qrCode;
+@property (nonatomic, strong) IBOutlet UIImageView *coinTaker;
+
+@property (nonatomic, strong) IBOutlet UIView *coin10;
+@property (nonatomic, strong) IBOutlet UIView *coin20;
+@property (nonatomic, strong) IBOutlet UIView *coin50;
+@property (nonatomic, strong) IBOutlet UIView *coin100;
+@property (nonatomic, strong) IBOutlet UIView *coin200;
 
 - (IBAction)addCredit:(id)sender;
 - (IBAction)selectProduct:(id)sender;
