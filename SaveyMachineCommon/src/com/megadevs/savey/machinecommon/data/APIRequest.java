@@ -8,7 +8,7 @@ public class APIRequest implements Serializable {
     public int machine_id;
     public int task_id;
     public int user_task_id;
-
+    public String result;
 
     @Override
     public String toString() {

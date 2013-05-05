@@ -35,4 +35,5 @@ public class MainFragment extends BaseFragment {
     private void showCameraCapture() {
         getMainActivity().showCameraCapture();
     }
+
 }

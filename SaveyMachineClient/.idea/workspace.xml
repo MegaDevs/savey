@@ -39,58 +39,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" name="Default" comment="Progress on Android stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/res/drawable/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/BaseFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/CameraFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/GsonWrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SaveyMachineClient.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/SaveyMachineCommon.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineTagWriter/SaveyMachineTagWriter.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../TagUtilsLib/TagUtilsLib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_camera.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_task.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/project.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/libs/core.jar" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/libs/core.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/libs/gson-2.2.3.jar" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/libs/gson-2.2.3.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/camera/CameraManager.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/camera/CameraManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/camera/PreviewCallbackManager.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/camera/PreviewCallbackManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/Logg.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/Logg.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/RealWebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/WebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/APIRequest.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/APIResponse.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/QrCodeData.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/QrCodeData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/Request.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/RequestType.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/RequestType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/data/Response.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/HandleClient.java" afterPath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/HandleClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/SaveyServerSocket.java" afterPath="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/SaveyServerSocket.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/TaskType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_qrcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_task.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_task.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SaveyMachineClient.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693101237" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367701577659" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineServer/AndroidManifest.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367695298440" ignored="false" />
-    <file path="/MainActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367701451203" ignored="false" />
+    <file path="/MainActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713705765" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineServer/src/com/megadevs/savey/machineserver/MainActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367694874523" ignored="false" />
     <file path="/a.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693517157" ignored="false" />
-    <file path="/Dummy.txt" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367702795232" ignored="false" />
+    <file path="/Dummy.txt" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713844889" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineServer/project.properties" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693891064" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineCommon/src/data/QrCodeData.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693907565" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineCommon/src/data/APIResponse.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693907565" ignored="false" />
@@ -100,22 +69,26 @@
     <file path="$PROJECT_DIR$/../SaveyMachineCommon/src/data/RequestType.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367693907565" ignored="false" />
     <file path="/fragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367694924667" ignored="false" />
     <file path="/CameraManager.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367699007064" ignored="false" />
-    <file path="/RealWebService.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367701989867" ignored="false" />
-    <file path="/WebService.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367696254444" ignored="false" />
-    <file path="/APIRequest.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367695720501" ignored="false" />
+    <file path="/RealWebService.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713279592" ignored="false" />
+    <file path="/WebService.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713109850" ignored="false" />
+    <file path="/APIRequest.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713262703" ignored="false" />
     <file path="/GsonWrapper.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367702657395" ignored="false" />
     <file path="/User.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367696376698" ignored="false" />
     <file path="/TaskActivity.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367696770591" ignored="false" />
-    <file path="/APIResponse.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367696679914" ignored="false" />
+    <file path="/APIResponse.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713394425" ignored="false" />
     <file path="/main.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367696951190" ignored="false" />
-    <file path="/TaskFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367698807316" ignored="false" />
-    <file path="/MainFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367698713838" ignored="false" />
+    <file path="/TaskFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367714301441" ignored="false" />
+    <file path="/MainFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713582064" ignored="false" />
     <file path="/BaseFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367697885752" ignored="false" />
     <file path="/CameraFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367698910304" ignored="false" />
     <file path="/fragment_camera.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367698056714" ignored="false" />
     <file path="/fragment_main.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367698696878" ignored="false" />
     <file path="$PROJECT_DIR$/../TagUtilsLib/res/values/strings.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367699609759" ignored="false" />
     <file path="/HandleClient.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367702699914" ignored="false" />
+    <file path="/TaskType.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367709825610" ignored="false" />
+    <file path="/fragment_task.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367714402289" ignored="false" />
+    <file path="/QrCodeFragment.java" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367714259210" ignored="false" />
+    <file path="/fragment_qrcode.xml" changelist="bfe2ed10-df1b-4e63-9061-0c577c5bd02d" time="1367713879297" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,99 +152,103 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="21" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+            <state line="87" column="74" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2323#2533#0" expanded="true" />
-                <element signature="e#2518#2519#0" expanded="true" />
-                <element signature="e#2631#2851#0" expanded="true" />
-                <element signature="e#2840#2841#0" expanded="true" />
+                <element signature="e#2066#2346#0" expanded="true" />
+                <element signature="e#2331#2332#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="QrCodeFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="61" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+            <state line="36" column="5" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1710#2045#0" expanded="true" />
+                <element signature="e#2022#2023#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_qrcode.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_qrcode.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="50" selection-start="459" selection-end="459" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RealWebService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="APIResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="26" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealWebService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="32" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.5522388">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CameraFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/CameraFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="21" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+            <state line="142" column="60" selection-start="5454" selection-end="5454" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4906#5496#0" expanded="true" />
+                <element signature="e#5485#5486#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/camera/CameraManager.java">
+      <file leaf-file-name="TaskType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/TaskType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="1061" selection-end="1061" vertical-scroll-proportion="0.0">
+            <state line="4" column="6" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_camera.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_camera.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="WebService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="-1.6666666">
+            <state line="9" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_main.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_main.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="-3.3333333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="33" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#822#975#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TaskFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="74" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0">
+            <state line="180" column="19" selection-start="6735" selection-end="6735" vertical-scroll-proportion="0.71566266">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4701#4956#0" expanded="true" />
+                <element signature="e#4929#4930#0" expanded="true" />
+                <element signature="e#5175#5429#0" expanded="true" />
+                <element signature="e#5410#5411#0" expanded="true" />
+                <element signature="e#7027#7201#0" expanded="true" />
+                <element signature="e#7186#7187#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_task.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/fragment_task.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="64" selection-start="3324" selection-end="3324" vertical-scroll-proportion="-11.666667">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -294,26 +271,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java" />
         <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/GsonWrapper.java" />
-        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" />
         <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/User.java" />
-        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_task.xml" />
         <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskActivity.java" />
         <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/BaseFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/fragment_camera.xml" />
         <option value="$PROJECT_DIR$/res/layout/fragment_main.xml" />
-        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" />
         <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/CameraFragment.java" />
         <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/camera/CameraManager.java" />
         <option value="$PROJECT_DIR$/../SaveyMachineTagWriter/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/../SaveyMachineTagWriter/src/com/megadevs/machinetagwriter/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/TaskType.java" />
+        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" />
+        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java" />
         <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" />
+        <option value="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java" />
+        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_qrcode.xml" />
+        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_task.xml" />
       </list>
     </option>
   </component>
@@ -349,6 +329,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -491,8 +473,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -511,8 +491,8 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Android Application.SaveyMachineClient">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -527,6 +507,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -554,19 +547,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -694,31 +674,31 @@
     <frame x="10" y="22" width="1420" height="813" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.6724387" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.6724387" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -787,10 +767,44 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_camera.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="152" selection-end="152" vertical-scroll-proportion="0.13533835">
+        <state line="3" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="33" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="74" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#4701#4956#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+            <element signature="e#5175#5429#0" expanded="true" />
+            <element signature="e#5410#5411#0" expanded="true" />
+            <element signature="e#7027#7201#0" expanded="true" />
+            <element signature="e#7186#7187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -803,23 +817,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="140" selection-end="140" vertical-scroll-proportion="0.11278196">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="18" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="534" selection-end="534" vertical-scroll-proportion="0.36090225">
           <folding />
         </state>
       </provider>
@@ -841,16 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_task.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/BaseFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="28" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
@@ -865,7 +855,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="-1.6666666">
+        <state line="3" column="49" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -875,28 +865,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="-3.3333333">
+        <state line="6" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="33" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#822#975#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="74" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,9 +887,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/CameraFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -958,29 +926,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/TaskType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="6" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="258" selection-end="258" vertical-scroll-proportion="0.36144578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/data/APIResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="26" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_qrcode.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="50" selection-start="459" selection-end="459" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/QrCodeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="5" selection-start="1227" selection-end="1227" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1710#2045#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="142" column="60" selection-start="5454" selection-end="5454" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#4906#5496#0" expanded="true" />
+            <element signature="e#5485#5486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_task.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="64" selection-start="3324" selection-end="3324" vertical-scroll-proportion="-11.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="21" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+        <state line="87" column="74" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2323#2533#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-            <element signature="e#2631#2851#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
+            <element signature="e#2066#2346#0" expanded="true" />
+            <element signature="e#2331#2332#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+        <state line="10" column="61" selection-start="500" selection-end="500" vertical-scroll-proportion="0.036144577">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineclient/TaskFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="32" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.5522388">
-          <folding />
+        <state line="180" column="19" selection-start="6735" selection-end="6735" vertical-scroll-proportion="0.71566266">
+          <folding>
+            <element signature="e#4701#4956#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+            <element signature="e#5175#5429#0" expanded="true" />
+            <element signature="e#5410#5411#0" expanded="true" />
+            <element signature="e#7027#7201#0" expanded="true" />
+            <element signature="e#7186#7187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -127,6 +127,25 @@ public class RealWebService implements WebService {
         });
     }
 
+    @Override
+    public void sendTaskData(final int machineId, final int userId, final int taskId, final String result, final OnWebServiceResponse listener) {
+        performOnBackground(new Runnable() {
+            @Override
+            public void run() {
+                APIRequest apiRequest = new APIRequest();
+                apiRequest.machine_id = machineId;
+                apiRequest.user_id = userId;
+                apiRequest.task_id = taskId;
+                apiRequest.result = result;
+                HttpGet request = createRequest(Page.SEND_TASK, apiRequest);
+                APIResponse response = execute(request);
+                if (listener != null) {
+                    listener.onWebServiceResponse(response);
+                }
+            }
+        });
+    }
+
     public enum Endpoint {
         DEFAULT("http://ec2-54-244-109-143.us-west-2.compute.amazonaws.com:8080/SaveyAPIs/");
 
@@ -143,7 +162,8 @@ public class RealWebService implements WebService {
     public enum Page {
         GET_MACHINE("get_machine"),
         GET_CREDIT("get_credit"),
-        GET_TASK("get_task");
+        GET_TASK("get_task"),
+        SEND_TASK("submit_task_result");
 
         String value;
         Page(String value) {
