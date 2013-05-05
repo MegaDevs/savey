@@ -12,8 +12,8 @@
 		D76FCC4A17357B8E00FD3F14 /* bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3617357B8E00FD3F14 /* bkg.png */; };
 		D76FCC4B17357B8E00FD3F14 /* cappuccino_down.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3717357B8E00FD3F14 /* cappuccino_down.png */; };
 		D76FCC4C17357B8E00FD3F14 /* cappuccino_up.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3817357B8E00FD3F14 /* cappuccino_up.png */; };
-		D76FCC4D17357B8E00FD3F14 /* choccolate_down.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3917357B8E00FD3F14 /* choccolate_down.png */; };
-		D76FCC4E17357B8E00FD3F14 /* choccolate_up.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3A17357B8E00FD3F14 /* choccolate_up.png */; };
+		D76FCC4D17357B8E00FD3F14 /* chocolate_down.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3917357B8E00FD3F14 /* chocolate_down.png */; };
+		D76FCC4E17357B8E00FD3F14 /* chocolate_up.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3A17357B8E00FD3F14 /* chocolate_up.png */; };
 		D76FCC4F17357B8E00FD3F14 /* coin_10.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3B17357B8E00FD3F14 /* coin_10.png */; };
 		D76FCC5017357B8E00FD3F14 /* coin_20.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3C17357B8E00FD3F14 /* coin_20.png */; };
 		D76FCC5117357B8E00FD3F14 /* coin_50.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC3D17357B8E00FD3F14 /* coin_50.png */; };
@@ -32,6 +32,9 @@
 		D76FCC5F173581B000FD3F14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76FCC5E173581AF00FD3F14 /* QuartzCore.framework */; };
 		D76FCC631735827C00FD3F14 /* UIView+Fancy.m in Sources */ = {isa = PBXBuildFile; fileRef = D76FCC621735827C00FD3F14 /* UIView+Fancy.m */; };
 		D76FCC651735852C00FD3F14 /* coin_200.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC641735852B00FD3F14 /* coin_200.png */; };
+		D76FCC671735C1FC00FD3F14 /* piece.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC661735C1FB00FD3F14 /* piece.png */; };
+		D76FCC6A1735C23800FD3F14 /* MDCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = D76FCC691735C23700FD3F14 /* MDCoin.m */; };
+		D76FCC6C1735C8A800FD3F14 /* coin_taker.png in Resources */ = {isa = PBXBuildFile; fileRef = D76FCC6B1735C8A700FD3F14 /* coin_taker.png */; };
 		D7D42EE917351D6D0049178D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EE817351D6D0049178D /* UIKit.framework */; };
 		D7D42EEB17351D6D0049178D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEA17351D6D0049178D /* Foundation.framework */; };
 		D7D42EED17351D6D0049178D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D42EEC17351D6D0049178D /* CoreGraphics.framework */; };
@@ -54,8 +57,8 @@
 		D76FCC3617357B8E00FD3F14 /* bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bkg.png; path = ../../savey_assets/ipad/bkg.png; sourceTree = "<group>"; };
 		D76FCC3717357B8E00FD3F14 /* cappuccino_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cappuccino_down.png; path = ../../savey_assets/ipad/cappuccino_down.png; sourceTree = "<group>"; };
 		D76FCC3817357B8E00FD3F14 /* cappuccino_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cappuccino_up.png; path = ../../savey_assets/ipad/cappuccino_up.png; sourceTree = "<group>"; };
-		D76FCC3917357B8E00FD3F14 /* choccolate_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choccolate_down.png; path = ../../savey_assets/ipad/choccolate_down.png; sourceTree = "<group>"; };
-		D76FCC3A17357B8E00FD3F14 /* choccolate_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = choccolate_up.png; path = ../../savey_assets/ipad/choccolate_up.png; sourceTree = "<group>"; };
+		D76FCC3917357B8E00FD3F14 /* chocolate_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chocolate_down.png; path = ../../savey_assets/ipad/chocolate_down.png; sourceTree = "<group>"; };
+		D76FCC3A17357B8E00FD3F14 /* chocolate_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chocolate_up.png; path = ../../savey_assets/ipad/chocolate_up.png; sourceTree = "<group>"; };
 		D76FCC3B17357B8E00FD3F14 /* coin_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_10.png; path = ../../savey_assets/ipad/coin_10.png; sourceTree = "<group>"; };
 		D76FCC3C17357B8E00FD3F14 /* coin_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_20.png; path = ../../savey_assets/ipad/coin_20.png; sourceTree = "<group>"; };
 		D76FCC3D17357B8E00FD3F14 /* coin_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_50.png; path = ../../savey_assets/ipad/coin_50.png; sourceTree = "<group>"; };
@@ -75,6 +78,10 @@
 		D76FCC611735827C00FD3F14 /* UIView+Fancy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Fancy.h"; sourceTree = "<group>"; };
 		D76FCC621735827C00FD3F14 /* UIView+Fancy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Fancy.m"; sourceTree = "<group>"; };
 		D76FCC641735852B00FD3F14 /* coin_200.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_200.png; path = ../../savey_assets/ipad/coin_200.png; sourceTree = "<group>"; };
+		D76FCC661735C1FB00FD3F14 /* piece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piece.png; sourceTree = "<group>"; };
+		D76FCC681735C23700FD3F14 /* MDCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCoin.h; sourceTree = "<group>"; };
+		D76FCC691735C23700FD3F14 /* MDCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCoin.m; sourceTree = "<group>"; };
+		D76FCC6B1735C8A700FD3F14 /* coin_taker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coin_taker.png; path = ../../savey_assets/ipad/coin_taker.png; sourceTree = "<group>"; };
 		D7D42EE517351D6D0049178D /* VendingMachineDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VendingMachineDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D42EE817351D6D0049178D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7D42EEA17351D6D0049178D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -122,11 +129,13 @@
 		D76FCC3517357B8500FD3F14 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D76FCC6B1735C8A700FD3F14 /* coin_taker.png */,
 				D76FCC3617357B8E00FD3F14 /* bkg.png */,
+				D76FCC661735C1FB00FD3F14 /* piece.png */,
 				D76FCC3717357B8E00FD3F14 /* cappuccino_down.png */,
 				D76FCC3817357B8E00FD3F14 /* cappuccino_up.png */,
-				D76FCC3917357B8E00FD3F14 /* choccolate_down.png */,
-				D76FCC3A17357B8E00FD3F14 /* choccolate_up.png */,
+				D76FCC3917357B8E00FD3F14 /* chocolate_down.png */,
+				D76FCC3A17357B8E00FD3F14 /* chocolate_up.png */,
 				D76FCC641735852B00FD3F14 /* coin_200.png */,
 				D76FCC3B17357B8E00FD3F14 /* coin_10.png */,
 				D76FCC3C17357B8E00FD3F14 /* coin_20.png */,
@@ -201,6 +210,8 @@
 				D7D42F0C17351E860049178D /* MDNetworkManager.m */,
 				D76FCC3117355FF100FD3F14 /* NSData+Base64.h */,
 				D76FCC3217355FF100FD3F14 /* NSData+Base64.m */,
+				D76FCC681735C23700FD3F14 /* MDCoin.h */,
+				D76FCC691735C23700FD3F14 /* MDCoin.m */,
 			);
 			path = VendingMachineDisplay;
 			sourceTree = "<group>";
@@ -280,8 +291,8 @@
 				D76FCC4A17357B8E00FD3F14 /* bkg.png in Resources */,
 				D76FCC4B17357B8E00FD3F14 /* cappuccino_down.png in Resources */,
 				D76FCC4C17357B8E00FD3F14 /* cappuccino_up.png in Resources */,
-				D76FCC4D17357B8E00FD3F14 /* choccolate_down.png in Resources */,
-				D76FCC4E17357B8E00FD3F14 /* choccolate_up.png in Resources */,
+				D76FCC4D17357B8E00FD3F14 /* chocolate_down.png in Resources */,
+				D76FCC4E17357B8E00FD3F14 /* chocolate_up.png in Resources */,
 				D76FCC4F17357B8E00FD3F14 /* coin_10.png in Resources */,
 				D76FCC5017357B8E00FD3F14 /* coin_20.png in Resources */,
 				D76FCC5117357B8E00FD3F14 /* coin_50.png in Resources */,
@@ -298,6 +309,8 @@
 				D76FCC5C17357B8E00FD3F14 /* tea_down.png in Resources */,
 				D76FCC5D17357B8E00FD3F14 /* tea_up.png in Resources */,
 				D76FCC651735852C00FD3F14 /* coin_200.png in Resources */,
+				D76FCC671735C1FC00FD3F14 /* piece.png in Resources */,
+				D76FCC6C1735C8A800FD3F14 /* coin_taker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +344,7 @@
 				D7D42F0D17351E860049178D /* MDNetworkManager.m in Sources */,
 				D76FCC3317355FF100FD3F14 /* NSData+Base64.m in Sources */,
 				D76FCC631735827C00FD3F14 /* UIView+Fancy.m in Sources */,
+				D76FCC6A1735C23800FD3F14 /* MDCoin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,7 @@
 #import "NSData+Base64.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIView+Fancy.h"
+#import "MDCoin.h"
 
 #define MD50CentButton 50
 #define MD10CentButton 10
@@ -38,7 +39,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    __networkManager = [[MDNetworkManager alloc] initWithMessageSentBlock:^(NSDictionary *json){
+    /*__networkManager = [[MDNetworkManager alloc] initWithMessageSentBlock:^(NSDictionary *json){
         NSLog(@"JSON %@", json);
         if ([json[MDTypeKey] isEqualToString:MD_GET_QWRCODE]) {
             [self didSendQrCode:json];
@@ -46,7 +47,7 @@
         else if ([json[MDTypeKey] isEqualToString:MD_SELECT_PRODUCT]){
             [self didSelectProduct:json];
         }
-    }];
+    }];*/
     
     [__networkManager start];
     
@@ -64,12 +65,84 @@
     __activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
     [self.view addSubview:__activityIndicator];
     [__activityIndicator startAnimating];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(coinDropped:)
+                                                 name:MDNotificationCoinDropped
+                                               object:nil];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:MDNotificationCoinDropped
+                                                  object:nil];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)repositionCoin:(UIView *)coin
+{
+    switch (coin.tag) {
+        case 10:
+            coin.frame = self.coin10.frame;
+            break;
+        case 20:
+            coin.frame = self.coin20.frame;
+            break;
+        case 50:
+            coin.frame = self.coin50.frame;
+            break;
+        case 100:
+            coin.frame = self.coin100.frame;
+            break;
+        case 200:
+            coin.frame = self.coin200.frame;
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)coinDropped:(NSNotification *)notification
+{
+    UIView *view = notification.object;
+    if(CGRectIntersectsRect(view.frame, self.coinTaker.frame)){
+        
+        [UIView animateWithDuration:0.3
+                              delay:0.0
+                            options:0
+                         animations:^{
+                             view.center = CGPointMake(938,134);
+                         }
+                         completion:^(BOOL finished){
+                             [UIView animateWithDuration:0.6
+                                                   delay:0.0
+                                                 options:0
+                                              animations:^{
+                                                  self.coinTaker.transform = view.transform = CGAffineTransformMakeTranslation(300, 0);
+                                              }
+                                              completion:^(BOOL finished){
+                                                  [UIView animateWithDuration:0.6
+                                                                        delay:0.0
+                                                                      options:0
+                                                                   animations:^{
+                                                                       self.coinTaker.transform = CGAffineTransformIdentity;
+                                                                   }
+                                                                   completion:^(BOOL finished){
+                                                                       view.transform = CGAffineTransformIdentity;
+                                                                       [self repositionCoin:view];
+                                                                       [__networkManager addCredit:view.tag / 100.0];
+                                                                   }
+                                                   ];
+                                              }
+                              ];
+                         }];
+    };
 }
 
 - (void)didSendQrCode:(id)json
