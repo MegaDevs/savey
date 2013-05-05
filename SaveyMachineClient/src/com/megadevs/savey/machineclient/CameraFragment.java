@@ -51,7 +51,7 @@ public class CameraFragment extends BaseFragment implements PreviewCallbackManag
     @Override
     public void onQrCodeReaded(QrCodeData data) {
         if (data != null) {
-            getMainActivity().getRemoteTask(data);
+            getMainActivity().getRemoteTask(data, true);
         }
     }
 }

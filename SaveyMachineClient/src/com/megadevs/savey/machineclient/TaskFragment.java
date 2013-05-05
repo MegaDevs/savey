@@ -35,12 +35,12 @@ public class TaskFragment extends BaseFragment implements View.OnClickListener, 
     private ViewGroup imageAd;
     private ImageView image;
     private TextView txtCountdown;
-    private Button btnSubmitAd;
+    private ImageButton btnSubmitAd;
     private ViewGroup surveyContainer;
     private TextView txtTitle;
     private RadioGroup answerContainer;
     private TextView txtCredit;
-    private Button btnSubmitSurvey;
+    private ImageButton btnSubmitSurvey;
 
     private int machineId;
     private int taskId;
@@ -69,8 +69,8 @@ public class TaskFragment extends BaseFragment implements View.OnClickListener, 
         answerContainer = (RadioGroup) view.findViewById(R.id.answer_container);
         txtCredit = (TextView) view.findViewById(R.id.txt_credit);
 
-        btnSubmitAd = (Button) view.findViewById(R.id.btn_submit_ad);
-        btnSubmitSurvey = (Button) view.findViewById(R.id.btn_submit_survey);
+        btnSubmitAd = (ImageButton) view.findViewById(R.id.btn_submit_ad);
+        btnSubmitSurvey = (ImageButton) view.findViewById(R.id.btn_submit_survey);
         btnSubmitAd.setOnClickListener(this);
         btnSubmitSurvey.setOnClickListener(this);
 
