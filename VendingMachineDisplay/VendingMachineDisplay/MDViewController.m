@@ -166,7 +166,7 @@
 
 - (void)didSelectProduct:(id)json
 {
-    if (json[@"success"]) {
+    if ([json[@"success"] boolValue]) {
         [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Making product.." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     }
     else {
@@ -182,6 +182,12 @@
 - (IBAction)selectProduct:(id)sender
 {
     [__networkManager selectProduct:[sender tag]];
+}
+
+- (IBAction)showAdmin:(id)sender
+{
+    self.ipField.hidden = !self.ipField.hidden;
+    self.resetConnectionButton.hidden = !self.resetConnectionButton.hidden;
 }
 
 @end

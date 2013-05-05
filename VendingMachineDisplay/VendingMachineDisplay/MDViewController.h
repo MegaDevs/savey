@@ -30,6 +30,8 @@
 - (IBAction)addCredit:(id)sender;
 - (IBAction)selectProduct:(id)sender;
 
+- (IBAction)showAdmin:(id)sender;
+
 - (IBAction)resetConnection:(id)sender;
 
 @end
