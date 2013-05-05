@@ -7,6 +7,7 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.megadevs.savey.machinecommon.Logg;
@@ -24,6 +25,7 @@ public class QrCodeFragment extends BaseFragment {
     }
 
     private ImageView imageQrCode;
+    private WindowManager.LayoutParams originalParams = new WindowManager.LayoutParams();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,6 +37,23 @@ public class QrCodeFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
         imageQrCode = (ImageView) view.findViewById(R.id.image_qrcode);
         showQrCode(getArguments().getString(EXTRA_QRCODE, null));
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        getMainActivity().getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        WindowManager.LayoutParams layout = getMainActivity().getWindow().getAttributes();
+        originalParams.copyFrom(layout);
+        layout.screenBrightness = 1F;
+        getMainActivity().getWindow().setAttributes(layout);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        getMainActivity().getWindow().setAttributes(originalParams);
+        getMainActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     private void showQrCode(final String data) {

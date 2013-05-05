@@ -95,12 +95,12 @@ public class RealWebService implements WebService {
     }
 
     @Override
-    public void getCredit(final int taskId, final OnWebServiceResponse listener) {
+    public void getCredit(final int userTaskId, final OnWebServiceResponse listener) {
         performOnBackground(new Runnable() {
             @Override
             public void run() {
                 APIRequest apiRequest = new APIRequest();
-                apiRequest.task_id = taskId;
+                apiRequest.user_task_id = userTaskId;
                 HttpGet request = createRequest(Page.GET_CREDIT, apiRequest);
                 APIResponse response = execute(request);
                 if (listener != null) {
