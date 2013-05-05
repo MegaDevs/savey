@@ -49,8 +49,6 @@
         }
     }];
     
-    [__networkManager start];
-    
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
@@ -77,6 +75,15 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:MDNotificationCoinDropped
                                                   object:nil];
+}
+
+
+- (IBAction)resetConnection:(id)sender
+{
+    NSString *ip = self.ipField.text;
+    if (ip.length > 0) {
+        [__networkManager setManagerWithIP:ip];
+    }
 }
 
 - (void)didReceiveMemoryWarning

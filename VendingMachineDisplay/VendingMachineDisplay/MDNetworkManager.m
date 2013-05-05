@@ -24,9 +24,17 @@
     
     self = [super init];
     
+    [self setManagerWithIP:MDIP];
+        __mblock = [block copy];
+    
+    return self;
+}
+
+- (void)setManagerWithIP:(NSString *)ip
+{
     CFReadStreamRef readStream;
     CFWriteStreamRef writeStream;
-    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)MDIP, MDPort, &readStream, &writeStream);
+    CFStreamCreatePairWithSocketToHost(NULL, (CFStringRef)CFBridgingRetain(ip), MDPort, &readStream, &writeStream);
     __inputStream = (__bridge NSInputStream *)readStream;
     __outputStream = (__bridge NSOutputStream *)writeStream;
     
@@ -36,13 +44,6 @@
     [__inputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [__outputStream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     
-    __mblock = [block copy];
-    
-    return self;
-}
-
-- (void)start
-{
     [__inputStream open];
     [__outputStream open];
 }

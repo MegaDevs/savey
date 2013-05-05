@@ -18,6 +18,9 @@
 @property (nonatomic, strong) IBOutlet UIImageView *qrCode;
 @property (nonatomic, strong) IBOutlet UIImageView *coinTaker;
 
+@property (nonatomic, strong) IBOutlet UITextField *ipField;
+@property (nonatomic, strong) IBOutlet UIButton    *resetConnectionButton;
+
 @property (nonatomic, strong) IBOutlet UIView *coin10;
 @property (nonatomic, strong) IBOutlet UIView *coin20;
 @property (nonatomic, strong) IBOutlet UIView *coin50;
@@ -26,5 +29,7 @@
 
 - (IBAction)addCredit:(id)sender;
 - (IBAction)selectProduct:(id)sender;
+
+- (IBAction)resetConnection:(id)sender;
 
 @end
