@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SaveyAPIs</display-name>
+  <servlet>
+    <servlet-name>SaveyTestServlet</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.SaveyTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveyTestServlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetVendingMachines</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetVendingMachinesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetVendingMachines</servlet-name>
+    <url-pattern>/get_vending_machines</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetCredit</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetCreditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCredit</servlet-name>
+    <url-pattern>/get_credit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetTask</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetTaskServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTask</servlet-name>
+    <url-pattern>/get_task</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SubmitTaskResult</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.SubmitTaskResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubmitTaskResult</servlet-name>
+    <url-pattern>/submit_task_result</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetTaskResult</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetTaskResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTaskResult</servlet-name>
+    <url-pattern>/get_task_result</url-pattern>
+  </servlet-mapping>
+</web-app>
