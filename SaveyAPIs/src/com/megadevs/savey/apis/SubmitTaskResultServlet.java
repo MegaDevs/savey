@@ -58,7 +58,7 @@ public class SubmitTaskResultServlet extends HttpServlet {
 
 			db.exec("INSERT INTO users_to_tasks ( id , result , id_user , id_task , id_machine , created_at ) " +
 					"VALUES ( NULL , " +
-					"'male'" + " , " +
+					"'" + result + "'" + " , " +
 					userID + " , " +
 					taskID + " , " +
 					machineID + " , " +

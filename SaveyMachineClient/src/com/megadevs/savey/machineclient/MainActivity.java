@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
                     String content = TULReader.readStrings(tag)[0];
                     Logg.d("Tag content: %s", content);
                     if (content != null) {
-                        getRemoteTask(GsonWrapper.getQrCodeData(content));
+                        getRemoteTask(GsonWrapper.getQrCodeData(content), false);
                     }
                 } catch (Exception e) {
                     Logg.e("Error while reading tag: %s", e.getMessage());
@@ -54,25 +54,39 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void getRemoteTask(QrCodeData data) {
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Fragment frag = getFragmentManager().findFragmentById(R.id.container);
+        switch (FragmentTag.valueOf(frag.getTag())) {
+            case QRCODE:
+            case TASK:
+                showFragment(MainFragment.getInstance(), FragmentTag.MAIN, false);
+                break;
+        }
+    }
+
+    public void getRemoteTask(QrCodeData data, final boolean comingFromCamera) {
         if (data != null) {
             showLoadingFragment(false);
             RealWebService.getInstance().getTask(Integer.valueOf(data.savey), User.getInstance().getId(), new WebService.OnWebServiceResponse() {
                 @Override
                 public void onWebServiceResponse(APIResponse response) {
                     if (response != null) {
-                        showTask(response);
+                        showTask(response, comingFromCamera);
                     }
                 }
             });
         }
     }
 
-    private void showTask(final APIResponse response) {
+    private void showTask(final APIResponse response, final boolean comingFromCamera) {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                hideFragment(FragmentTag.CAMERA);
+                if (comingFromCamera) {
+                    popBackStack();
+                }
                 TaskFragment frag = TaskFragment.getInstance(response);
                 showFragment(frag, FragmentTag.TASK);
             }
@@ -103,30 +117,52 @@ public class MainActivity extends Activity {
     }
 
     private void showFragment(Fragment fragment, FragmentTag tag) {
-        showFragment(fragment, tag, true);
+        showFragment(fragment, tag, true, true);
     }
 
     private void showFragment(Fragment fragment, FragmentTag tag, boolean addToBackStack) {
+        showFragment(fragment, tag, addToBackStack, true);
+    }
+
+    private void showFragment(Fragment fragment, FragmentTag tag, boolean addToBackStack, boolean ignoreCheck) {
         if (tag != FragmentTag.LOADING) {
-            hideFragment(FragmentTag.LOADING);
+            hideFragment(FragmentTag.LOADING, ignoreCheck);
         }
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment, tag.name());
         if (addToBackStack) {
             transaction.addToBackStack(tag.name());
         }
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         transaction.commitAllowingStateLoss();
     }
 
     private void hideFragment(FragmentTag tag) {
+        hideFragment(tag, true);
+    }
+
+    private void hideFragment(FragmentTag tag, boolean ignoreCheck) {
         Fragment fragment = getFragmentByTag(tag.name());
         if (fragment != null) {
             //if (!getFragmentManager().popBackStackImmediate(tag.name(), FragmentManager.POP_BACK_STACK_INCLUSIVE)) {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.remove(fragment);
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 transaction.commitAllowingStateLoss();
             //}
         }
+        if (!ignoreCheck) {
+            checkNoFragmentLoaded();
+        }
+    }
+
+    private void checkNoFragmentLoaded() {
+        for (FragmentTag tag : FragmentTag.values()) {
+            if (isFragmentAdded(tag)) {
+                return;
+            }
+        }
+        showFragment(MainFragment.getInstance(), FragmentTag.MAIN, false, false);
     }
 
     private Fragment getFragmentByTag(String tag) {

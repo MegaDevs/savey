@@ -39,25 +39,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a902017e-86db-4a63-b677-17147d6bf151" name="Default" comment="Progress on Android stuff">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MusicPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/ArduinoHandler.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/ArduinoHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/HandleClient.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/HandleClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/QrCodeFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/QrCodeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/RealWebService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/SaveyMachineClient.iml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/SaveyMachineClient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SaveyServerSocket.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SaveyServerSocket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SocketService.java" afterPath="$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SocketService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" afterPath="$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/network/WebService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/b_camera_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/b_camera_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/b_submit_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/b_submit_up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/bkg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable-hdpi/savey_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable/b_camera.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/drawable/b_submit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/values/styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/CameraFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/CameraFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainActivity.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/TaskFragment.java" afterPath="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/TaskFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_loading.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_loading.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_qrcode.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_qrcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_task.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_task.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SaveyMachineClient/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SaveyMachineClient/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SaveyMachineServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367664013109" ignored="false" />
-    <file path="/Dummy.txt" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367720262192" ignored="false" />
+    <file path="/Dummy.txt" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367735476699" ignored="false" />
     <file path="/Socket.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367672418917" ignored="false" />
     <file path="/SocketService.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367731627033" ignored="false" />
     <file path="/SaveySocket.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367665112183" ignored="false" />
@@ -65,8 +71,8 @@
     <file path="/Request.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367675314957" ignored="false" />
     <file path="/Response.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367676012007" ignored="false" />
     <file path="/SaveyServerSocket.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367731665341" ignored="false" />
-    <file path="/MainActivity.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367735355386" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367701577660" ignored="false" />
+    <file path="/MainActivity.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367739751660" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367736374829" ignored="false" />
     <file path="/fragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367694924667" ignored="false" />
     <file path="/WebService.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367734598956" ignored="false" />
     <file path="/HandleClient.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367723586747" ignored="false" />
@@ -80,7 +86,6 @@
     <file path="/CameraManager.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367699007064" ignored="false" />
     <file path="/PreviewCallbackManager.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367690938988" ignored="false" />
     <file path="/QrCodeData.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367690856773" ignored="false" />
-    <file path="$PROJECT_DIR$/../SaveyMachineClient/AndroidManifest.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367701577660" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineClient/res/layout/main.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367696953979" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineClient/build.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367693101186" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineClient/res/values/strings.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367693101186" ignored="false" />
@@ -88,28 +93,30 @@
     <file path="/GsonWrapper.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367702657516" ignored="false" />
     <file path="/User.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367696376698" ignored="false" />
     <file path="/TaskActivity.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367696770591" ignored="false" />
-    <file path="/TaskFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367717704360" ignored="false" />
-    <file path="/MainFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367713582064" ignored="false" />
+    <file path="/TaskFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367737148272" ignored="false" />
+    <file path="/MainFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367736439614" ignored="false" />
     <file path="/BaseFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367697885752" ignored="false" />
-    <file path="/CameraFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367698910304" ignored="false" />
+    <file path="/CameraFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367738686392" ignored="false" />
     <file path="/fragment_camera.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367698056714" ignored="false" />
-    <file path="/fragment_main.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367698696879" ignored="false" />
+    <file path="/fragment_main.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367736573404" ignored="false" />
     <file path="$PROJECT_DIR$/../TagUtilsLib/res/values/strings.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367699609641" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineTagWriter/src/com/megadevs/machinetagwriter/MainActivity.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367701304988" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineTagWriter/AndroidManifest.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367700905231" ignored="false" />
     <file path="$PROJECT_DIR$/../SaveyMachineTagWriter/project.properties" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367700414721" ignored="false" />
     <file path="/TaskType.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367709825625" ignored="false" />
-    <file path="/fragment_task.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367714402290" ignored="false" />
+    <file path="/fragment_task.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367737669811" ignored="false" />
     <file path="/QrCodeFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367735286017" ignored="false" />
-    <file path="/fragment_qrcode.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367718180498" ignored="false" />
-    <file path="$PROJECT_DIR$/../SaveyMachineClient/res/layout/fragment_task.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367715437558" ignored="false" />
-    <file path="$PROJECT_DIR$/../SaveyMachineClient/src/com/megadevs/savey/machineclient/MainFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367715437558" ignored="false" />
+    <file path="/fragment_qrcode.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367737798292" ignored="false" />
     <file path="/LoadingFragment.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367718111736" ignored="false" />
-    <file path="/fragment_loading.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367718002296" ignored="false" />
+    <file path="/fragment_loading.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367737518290" ignored="false" />
     <file path="/UsbAccessoryActivity.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367720038369" ignored="false" />
     <file path="/ArduinoHandler.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367732747668" ignored="false" />
     <file path="/Product.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367727959071" ignored="false" />
     <file path="/MusicPlayer.java" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367723555396" ignored="false" />
+    <file path="$PROJECT_DIR$/../SaveyMachineClient/SaveyMachineClient.iml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367735474260" ignored="false" />
+    <file path="/styles.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367737328955" ignored="false" />
+    <file path="/b_camera.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367736291430" ignored="false" />
+    <file path="/b_submit.xml" changelist="a902017e-86db-4a63-b677-17147d6bf151" time="1367736322432" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,13 +180,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="79" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.9303483">
-              <folding>
-                <element signature="e#1076#2255#0" expanded="true" />
-                <element signature="e#1373#2077#0" expanded="true" />
-                <element signature="e#2058#2059#0" expanded="true" />
-                <element signature="e#2248#2249#0" expanded="true" />
-              </folding>
+            <state line="109" column="79" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.9927711">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,10 +199,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SaveyServerSocket.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="27" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#559#573#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,7 +219,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="41" selection-start="952" selection-end="952" vertical-scroll-proportion="-12.222222">
+            <state line="22" column="41" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -239,9 +238,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/HandleClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="83" column="71" selection-start="4443" selection-end="4443" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -250,9 +247,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MusicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -402,6 +397,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -524,7 +520,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,8 +540,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -596,6 +591,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -621,19 +629,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -749,14 +744,12 @@
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.6724387" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -767,8 +760,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.6724387" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.6724387" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.6724387" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -840,15 +835,38 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/HandleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="71" selection-start="4443" selection-end="4443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MusicPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/ArduinoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="17" selection-start="4953" selection-end="4953" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="13" selection-start="2425" selection-end="2425" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1076#2255#0" expanded="true" />
-            <element signature="e#1373#2077#0" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2248#2249#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -875,9 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/megadevs/savey/machineserver/Manifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="187" selection-end="187" vertical-scroll-proportion="0.18072289">
-          <folding />
-        </state>
+        <state line="5" column="19" selection-start="187" selection-end="187" vertical-scroll-proportion="0.18072289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../SaveyMachineCommon/src/com/megadevs/savey/machinecommon/GsonWrapper.java">
@@ -967,9 +983,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MusicPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +992,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="41" selection-start="952" selection-end="952" vertical-scroll-proportion="-12.222222">
+        <state line="22" column="41" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -986,19 +1000,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/HandleClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="71" selection-start="4443" selection-end="4443" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/SaveyServerSocket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="27" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#559#573#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,13 +1048,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/megadevs/savey/machineserver/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="79" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.9303483">
-          <folding>
-            <element signature="e#1076#2255#0" expanded="true" />
-            <element signature="e#1373#2077#0" expanded="true" />
-            <element signature="e#2058#2059#0" expanded="true" />
-            <element signature="e#2248#2249#0" expanded="true" />
-          </folding>
+        <state line="109" column="79" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.9927711">
+          <folding />
         </state>
       </provider>
     </entry>

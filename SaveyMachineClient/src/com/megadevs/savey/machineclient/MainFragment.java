@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainFragment extends BaseFragment {
 
@@ -12,7 +12,7 @@ public class MainFragment extends BaseFragment {
         return new MainFragment();
     }
 
-    private Button btnShowCamera;
+    private ImageButton btnShowCamera;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainFragment extends BaseFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        btnShowCamera = (Button) view.findViewById(R.id.btn_show_camera);
+        btnShowCamera = (ImageButton) view.findViewById(R.id.btn_show_camera);
 
         btnShowCamera.setOnClickListener(new View.OnClickListener() {
             @Override

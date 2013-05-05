@@ -44,8 +44,11 @@ public class SaveyUtils {
 		writer.name("savey");
 		writer.value(id);
 		writer.endObject();
+	
+		String result = sWriter.toString();
+		sWriter.close();
 		
-		return writer.toString();
+		return result;
 	}
 	
 	public static String generateQRCode(String input) throws WriterException, IOException {
