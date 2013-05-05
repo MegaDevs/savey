@@ -9,7 +9,7 @@
 #import "MDNetworkManager.h"
 
 #define MDPort 9876
-#define MDIP   @"192.168.2.17"
+#define MDIP   @"192.168.2.15"
 #define IPPROTO_IP              0               /* dummy for IP */
 #define IPPROTO_UDP             17              /* user datagram protocol */
 #define IPPROTO_TCP             6               /* tcp */

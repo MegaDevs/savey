@@ -39,7 +39,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    /*__networkManager = [[MDNetworkManager alloc] initWithMessageSentBlock:^(NSDictionary *json){
+    __networkManager = [[MDNetworkManager alloc] initWithMessageSentBlock:^(NSDictionary *json){
         NSLog(@"JSON %@", json);
         if ([json[MDTypeKey] isEqualToString:MD_GET_QWRCODE]) {
             [self didSendQrCode:json];
@@ -47,7 +47,7 @@
         else if ([json[MDTypeKey] isEqualToString:MD_SELECT_PRODUCT]){
             [self didSelectProduct:json];
         }
-    }];*/
+    }];
     
     [__networkManager start];
     
