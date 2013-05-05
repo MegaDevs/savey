@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import com.megadevs.savey.machinecommon.Logg;
 
 public class QrCodeFragment extends BaseFragment {
 
@@ -45,6 +46,7 @@ public class QrCodeFragment extends BaseFragment {
             @Override
             public void run() {
                 try {
+                    Logg.d("Trying to decode image: %s", data);
                     byte[] decodedData = Base64.decode(data, Base64.DEFAULT);
                     final Bitmap bitmap = BitmapFactory.decodeByteArray(decodedData, 0, decodedData.length);
                     getMainActivity().runOnUiThread(new Runnable() {
@@ -54,7 +56,9 @@ public class QrCodeFragment extends BaseFragment {
                             imageQrCode.startAnimation(AnimationUtils.loadAnimation(getMainActivity(), android.R.anim.fade_in));
                         }
                     });
+                    Logg.d("Image decoded");
                 } catch (Exception e) {
+                    Logg.e("Couldn't show qrcode: %s", e.getMessage());
                     e.printStackTrace();
                 }
             }

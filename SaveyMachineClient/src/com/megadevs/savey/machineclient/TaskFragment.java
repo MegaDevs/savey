@@ -180,6 +180,7 @@ public class TaskFragment extends BaseFragment implements View.OnClickListener, 
         if (id == -1) {
             return;
         }
+        getMainActivity().showLoadingFragment(true);
         RealWebService.getInstance().sendTaskData(machineId, User.getInstance().getId(), taskId, answers[id], this);
     }
 
