@@ -53,5 +53,24 @@
   <servlet-mapping>
     <servlet-name>GetTaskResult</servlet-name>
     <url-pattern>/get_task_result</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <servlet-name>GetTasksList</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetTasksListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTasksList</servlet-name>
+    <url-pattern>/get_tasks_list</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetCharts</servlet-name>
+    <servlet-class>com.megadevs.savey.apis.GetChartsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCharts</servlet-name>
+    <url-pattern>/get_charts</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
