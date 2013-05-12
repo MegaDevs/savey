@@ -41,11 +41,14 @@ public class MainActivity extends Activity {
                         if (response != null) {
                             if (response.valid) {
                                 Logg.d("Adding credit: %f", response.credit);
+                                MusicPlayer.getInstance().play(MusicPlayer.Track.COINS);
                                 ArduinoHandler.getInstance().addCredit(response.credit);
                             } else {
+                                MusicPlayer.getInstance().play(MusicPlayer.Track.ERROR);
                                 Logg.e("Task is expired");
                             }
                         } else {
+                            MusicPlayer.getInstance().play(MusicPlayer.Track.ERROR);
                             Logg.e("Error while reading response");
                         }
                     }
@@ -93,7 +96,7 @@ public class MainActivity extends Activity {
                 }
                 ArduinoHandler.getInstance().removeCredit(product.getCost());
                 ArduinoHandler.getInstance().startCoffe(HandleClient.COFFE_DURATION);
-                MusicPlayer.getInstance().play();
+                MusicPlayer.getInstance().play(MusicPlayer.Track.MAKE_COFFEE);
             }
         });
         btnResetCredit = (Button) findViewById(R.id.btn_reset_credit);
@@ -108,7 +111,7 @@ public class MainActivity extends Activity {
 
         surface = (SurfaceView) findViewById(R.id.surface);
         cameraManager = new CameraManager(this, surface.getHolder(), onQrCodeReadedListener);
-        MusicPlayer.getInstance().init(this);
+        MusicPlayer.init(this);
     }
 
     @Override

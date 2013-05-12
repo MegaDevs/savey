@@ -2,7 +2,6 @@ package com.megadevs.savey.machineserver;
 
 import android.content.Context;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import com.megadevs.savey.machinecommon.Logg;
 
 import java.lang.ref.WeakReference;
@@ -10,6 +9,7 @@ import java.lang.ref.WeakReference;
 public class MusicPlayer implements MediaPlayer.OnPreparedListener {
 
     private static MusicPlayer instance;
+    private static WeakReference<Context> context;
 
     public static MusicPlayer getInstance() {
         if (instance == null) {
@@ -19,18 +19,15 @@ public class MusicPlayer implements MediaPlayer.OnPreparedListener {
     }
 
     private MediaPlayer mPlayer;
-    private boolean ready = false;
-    private WeakReference<Context> context;
 
     private MusicPlayer() {}
 
-    public void init(Context context) {
-        this.context = new WeakReference<Context>(context);
+    public static void init(Context context) {
+        MusicPlayer.context = new WeakReference<Context>(context);
     }
 
     @Override
     public void onPrepared(MediaPlayer mp) {
-        ready = true;
         mp.start();
     }
 
@@ -38,13 +35,12 @@ public class MusicPlayer implements MediaPlayer.OnPreparedListener {
         destroy();
         try {
             Context mContext = context.get();
-            if (context == null) {
+            if (mContext == null) {
                 return;
             }
-            mPlayer = new MediaPlayer();
-            mPlayer.setDataSource(mContext, Uri.parse(track.getValue()));
+            mPlayer = MediaPlayer.create(mContext, track.getValue());
             mPlayer.setOnPreparedListener(this);
-            mPlayer.prepareAsync();
+            mPlayer.prepare();
         } catch (Exception e) {
             Logg.e("Error while initializing MediaPlayer: %s", e.getMessage());
             e.printStackTrace();
@@ -52,13 +48,13 @@ public class MusicPlayer implements MediaPlayer.OnPreparedListener {
     }
 
     public void pause() {
-        if (mPlayer != null && mPlayer.isPlaying() && ready) {
+        if (mPlayer != null) {
             mPlayer.pause();
         }
     }
 
     public void reset() {
-        if (mPlayer != null && ready) {
+        if (mPlayer != null) {
             mPlayer.reset();
         }
     }
@@ -71,16 +67,16 @@ public class MusicPlayer implements MediaPlayer.OnPreparedListener {
     }
 
     public enum Track {
-        ERROR("assets://error.mp3"),
-        COINS("assets://coins.mp3"),
-        MAKE_COFFEE("assets://make.mp3");
+        ERROR(R.raw.error),
+        COINS(R.raw.coins),
+        MAKE_COFFEE(R.raw.espresso2);
 
-        String value;
-        Track(String value) {
+        int value;
+        Track(int value) {
             this.value = value;
         }
 
-        String getValue() {
+        int getValue() {
             return value;
         }
     }

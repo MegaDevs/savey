@@ -125,12 +125,14 @@ public class CameraManager {
             try {
                 while (!isInterrupted()) {
                     Thread.sleep(3000);
-                    camera.autoFocus(new Camera.AutoFocusCallback() {
-                        @Override
-                        public void onAutoFocus(boolean success, Camera camera) {
-                            Logg.v("Autofocus result: %s", success);
-                        }
-                    });
+                    try {
+                        camera.autoFocus(new Camera.AutoFocusCallback() {
+                            @Override
+                            public void onAutoFocus(boolean success, Camera camera) {
+                                Logg.v("Autofocus result: %s", success);
+                            }
+                        });
+                    } catch (Exception e) {}
                 }
             } catch (InterruptedException e) {}
         }
