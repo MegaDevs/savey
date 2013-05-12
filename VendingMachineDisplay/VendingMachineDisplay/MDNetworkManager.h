@@ -25,11 +25,10 @@ typedef void (^MessageSentBlock) (NSDictionary *json);
 }
 
 - (id)initWithMessageSentBlock:(MessageSentBlock)block;
-- (void)start;
 
 - (void)addCredit:(CGFloat)value;
 - (void)selectProduct:(NSInteger)identifier;
 - (void)requestQRCode;
-
+- (void)setManagerWithIP:(NSString *)ip;
 
 @end
